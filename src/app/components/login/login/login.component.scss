@@ -22,10 +22,10 @@ mat-form-field {
 
 .login-actions {
   display: flex;
-  justify-content: center; /* Centrar los elementos */
-  flex-direction: column; /* Alinear los elementos en columna */
+  justify-content: center; 
+  flex-direction: column; 
   margin-top: 20px;
-  text-align: center; /* Alinear el texto centrado */
+  text-align: center; 
 }
 
 .login-btn {
@@ -37,9 +37,9 @@ mat-form-field {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: 100%; /* Botón ocupa todo el ancho disponible */
-  max-width: 200px; /* Ancho máximo para evitar que se extienda demasiado */
-  margin: auto; /* Centrar el botón */
+  width: 100%;
+  max-width: 200px; 
+  margin: auto; 
 }
 
 .login-btn:hover {
