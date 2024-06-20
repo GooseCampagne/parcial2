@@ -1,12 +1,12 @@
 <div class="login-container">
   <mat-card>
     <mat-card-header>
-      <mat-card-title>Iniciar Sesión</mat-card-title>
+      <mat-card-title>Inicio de skibiddisesión</mat-card-title>
     </mat-card-header>
     <mat-card-content>
       <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
         <mat-form-field appearance="fill">
-          <mat-label>Usuario</mat-label>
+          <mat-label>Skibiddi usuario</mat-label>
           <input matInput formControlName="username" type="text" />
           <mat-error *ngIf="loginForm.get('username')?.hasError('required')">
             El username es obligatorio
@@ -14,7 +14,7 @@
         </mat-form-field>
 
         <mat-form-field appearance="fill">
-          <mat-label>Contraseña</mat-label>
+          <mat-label>Skibiddi contraseña</mat-label>
           <input matInput formControlName="password" type="password" />
           <mat-error *ngIf="loginForm.get('password')?.hasError('required')">
             La contraseña es obligatoria

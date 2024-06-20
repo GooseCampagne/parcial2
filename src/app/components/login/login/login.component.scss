@@ -3,19 +3,54 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #f0f0f0;
 }
 
 mat-card {
   width: 100%;
   max-width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
 }
 
 mat-form-field {
   width: 100%;
+  margin-bottom: 15px;
 }
 
 .login-actions {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Centrar los elementos */
+  flex-direction: column; /* Alinear los elementos en columna */
   margin-top: 20px;
+  text-align: center; /* Alinear el texto centrado */
+}
+
+.login-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Botón ocupa todo el ancho disponible */
+  max-width: 200px; /* Ancho máximo para evitar que se extienda demasiado */
+  margin: auto; /* Centrar el botón */
+}
+
+.login-btn:hover {
+  background-color: #45a049;
+}
+
+.login-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
 }
