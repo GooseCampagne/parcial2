@@ -12,6 +12,8 @@ import { ProductFormComponent } from '../products/product-form/product-form.comp
 export class VentasComponent implements OnInit {
   productList: Product[] = [];
   filteredProductList: Product[] = [];
+  cart: Product[] = [];
+  total: number = 0; // Variable para almacenar el total de la compra
 
   constructor(
     private productService: ProductsServiceService,
@@ -48,5 +50,20 @@ export class VentasComponent implements OnInit {
         this.productListMethod();
       }
     });
+  }
+
+  addToCart(product: Product): void {
+    this.cart.push(product);
+    this.calculateTotal();
+  }
+
+  calculateTotal(): void {
+    this.total = this.cart.reduce((acc, product) => acc + product.price, 0);
+  }
+
+  placeOrder(): void {
+    alert('La compra se ha realizado con éxito!');
+    this.cart = [];
+    this.total = 0; // Reiniciar el total después de realizar la compra
   }
 }
