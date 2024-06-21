@@ -1,29 +1,34 @@
-<mat-toolbar color="primary" class="mat-elevation-z8">
+<mat-toolbar color="warn" class="mat-elevation-z8">
   <button (click)="drawer.toggle()" mat-icon-button>
     <mat-icon>menu</mat-icon>
   </button>
-  <span>Pagina de productos</span>
+  <span>Productos</span>
   <span class="example-spacer"></span>
 </mat-toolbar>
 <mat-drawer-container autosize>
   <mat-drawer #drawer opened="true" mode="side" position="start">
     <mat-nav-list>
-      <mat-list-item>
+      <!-- <mat-list-item>
         <button routerLink="card" mat-button>
-          <mat-icon>dashboard</mat-icon> Dashboard
+          <mat-icon>dashboard</mat-icon> Inicio
         </button>
       </mat-list-item>
       <mat-list-item>
         <button routerLink="" mat-button><mat-icon>home</mat-icon> Home</button>
-      </mat-list-item>
+      </mat-list-item> -->
       <mat-list-item>
         <button routerLink="ProductsListComponent" mat-button>
-          <mat-icon>table</mat-icon> Lista de productos
+          <mat-icon>table</mat-icon> Productos
         </button>
       </mat-list-item>
       <mat-list-item>
         <button routerLink="UserListComponent" mat-button>
-          <mat-icon>explore</mat-icon> Usuarios
+          <mat-icon>group</mat-icon> Usuarios
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <button routerLink="VentasComponent" mat-button>
+          <mat-icon>shopping_cart_checkout</mat-icon> Ventas
         </button>
       </mat-list-item>
       <mat-list-item>

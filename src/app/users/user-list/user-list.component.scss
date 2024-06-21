@@ -1,0 +1,22 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .search-field {
+    flex: 1;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  
+  mat-form-field {
+    width: 90%;
+  }
+  
+  button[mat-fab] {
+    margin: 0;
+  }
+  

@@ -1,0 +1,29 @@
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Espacio entre las tarjetas */
+    padding: 16px; /* Espacio alrededor del contenedor */
+    justify-content: center; /* Centra las tarjetas en el contenedor */
+  }
+  
+  .product-card {
+    width: 300px;
+    margin: 16px; /* Margen alrededor de cada tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto de profundidad */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Centra el texto dentro de la tarjeta */
+  }
+  
+  .mat-card-header {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra el título horizontalmente */
+  }
+  
+  .mat-card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  

@@ -11,16 +11,16 @@ import { Product } from '../../models/Product';
 export class ConfirmationComponentComponent {
 
   constructor(
-    public dialogRef:MatDialogRef<ConfirmationComponentComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any
+    public dialogRef:MatDialogRef<ProductsListComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: Product
   ) {}
 
-  onSave(): void {
-    this.dialogRef.close();
+  onSave() {
+    this.dialogRef.close(true);
   }
 
   onCancel() {
-    console.log("AQUI, PERO ACA");
-  }
+    this.dialogRef.close(false);
+  }
 
 }
